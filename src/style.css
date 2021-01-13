@@ -1,0 +1,72 @@
+/* Add some whitespace around the entire page */
+body {
+  margin: 20px;
+  font-family: sans-serif;
+  background-color:#131516;
+  color:#e6dbdb;
+}
+
+/* Make sure the width is consistent for each, and wrap them if necessary */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom:2rem;
+}
+
+.load-more {
+  font-size:1.5rem;
+  background-color:#0074D9;
+  padding:1rem;
+  border-radius: .5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.load-more:hover{
+  background-color:#0262b6;
+  color:#fdfdfd;
+}
+.load-more a{
+  color:inherit;
+  text-decoration: inherit;
+}
+
+
+/* Use Flexbox to manage the horizontal spacing of the avatar and user-info */
+.profile-card {
+  display: flex;
+  margin-bottom: 15px;
+  min-width: 415px;
+}
+
+/* Make the avatar's edge rounded, add a border, and fill the background */
+.profile-avatar {
+  border-radius: 50%;
+  border: 3px solid #0074D9;
+  background-color: #0074D9;
+}
+
+/* Vertically centre the name/email info */
+.user-info {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Set the size of the text for the user's name, and eliminate margin */
+.profile-name {
+  color: #65aef6;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/* Set the size of the text for the user's email, and eliminate margin */
+.profile-email {
+  font-size: 1.3em;
+  margin: 0;
+}
+
+/* Use a lighter blue for the email link */
+.profile-email a {
+  color: #0074D9;
+}
